@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - ©Ghibli Official Store🍵</title>
+    <link rel="icon" href="https://enez76gwp29.exactdn.com/wp-content/uploads/2020/04/totoro2-200x200.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <center>
+            <a href="index.html"><img src="https://enez76gwp29.exactdn.com/wp-content/uploads/2020/04/Ghibli_logo.png?strip=all&lossy=1&ssl=1" alt="logo"></a>
+        </center>
+        </header>
+    <nav>
+        <center>
+            <ul class="navbar">
+                <li><a href="index.html" target="_blank">Ghibli Movies</a></li>
+                <li><a href="index.html" target="_blank">Accessories</a></li>
+                <li><a href="index.html" target="_blank">Apparel</a></li>
+                <li><a href="index.html" target="_blank">Plushies & Figurines</a></li>
+                <li><a href="index.html" target="_blank">Home Decor</a></li>
+                <li><a href="index.html" target="_blank">Stationary</a></li>
+                <li><a href="index.html" target="_blank">Miscellaneous</a></li>
+            </ul>
+        </center>    
+    </nav>  
+    <hr>
+    <main class="main-content">
+        <section id="forms">
+            <center>
+                <h1>Order Form</h1>
+                <form class="form-content" action="submit_order.html" method="post">
+                    <fieldset>
+                      <legend>Delivery Information:</legend>
+                      <label for="fullname">Full Name:</label>
+                      <input type="text" id="fullname" name="fullname"><br>
+                      <label for="address1">Address Line 1:</label>
+                      <input type="text" id="address1" name="address1"><br>
+                      <label for="address2">Address Line 2:</label>
+                      <input type="text" id="address2" name="address2"><br>
+                      <label for="city">City:</label>
+                      <input type="text" id="city" name="city"><br>
+                      <label for="state">State/Province:</label>
+                      <input type="text" id="state" name="state"><br>
+                      <label for="postalcode">Postal Code:</label>
+                      <input type="text" id="postalcode" name="postalcode"><br>
+                      <label for="country">Country:</label>
+                      <input type="text" id="country" name="country"><br>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Select Items:</legend>
+                      <label for="product_category">Select Product Category:</label>
+                      <select id="product_category" name="product_category">
+                          <option value="">Please select</option>
+                          <optgroup label="My Neighbor Totoro">
+                              <option value="10pcs Mini Fairy Dust Briquettes Figure - $7.95">10pcs Mini Fairy Dust Briquettes Figure - $7.95</option>
+                              <option value="My Neighbor Totoro Cute DIY Glass Ball Doll House for Christmas Gift - $10.99">My Neighbor Totoro Cute DIY Glass Ball Doll House for Christmas Gift - $10.99</option>
+                              <option value="My Neighbor Totoro Ceramic Coffee Mug With Lid And Spoon - $26.95">My Neighbor Totoro Ceramic Coffee Mug With Lid And Spoon - $26.95</option>
+                          </optgroup>
+                          <optgroup label="Spirited Away">
+                              <option value="Spirited Away No Face Kaonashi LED Night Light New 2023 - $29.99">Spirited Away No Face Kaonashi LED Night Light New 2023 - $29.99</option>
+                              <option value="Spirited Away Lanyard For Keychain ID Card Holder Horizontal and Vertical - $5.99">Spirited Away Lanyard For Keychain ID Card Holder Horizontal and Vertical - $5.99</option>
+                              <option value="Spirited Away – No Face Man Pen Holder Ornaments - $14.99">Spirited Away – No Face Man Pen Holder Ornaments - $14.99</option>
+                          </optgroup>
+                          <optgroup label="Howl's Moving Castle">
+                              <option value="Howl’s Moving Castle DIY Paper Model 50cm - $39.95">Howl’s Moving Castle DIY Paper Model 50cm - $39.95</option>
+                              <option value="Howl’s Moving Castle Howl Cosplay Costume Full Set 4PCS - $89.95">Howl’s Moving Castle Howl Cosplay Costume Full Set 4PCS - $89.95</option>
+                              <option value="Howl’s Moving Castle Sophie Hatter Cosplay Dress - $69.95">Howl’s Moving Castle Sophie Hatter Cosplay Dress - $69.95</option>
+                          </optgroup>
+                          <optgroup label="Princess Mononoke">
+                              <option value="Princess Mononoke 3D LED Light Multi-Color Changing - $18.95">Princess Mononoke 3D LED Light Multi-Color Changing - $18.95</option>
+                              <option value="Princess Mononoke Necklace - $7.99">Princess Mononoke Necklace - $7.99</option>
+                              <option value="Princess Mononoke and the Wolf Chibi Mug - $19.99">Princess Mononoke and the Wolf Chibi Mug - $19.99</option>
+                          </optgroup>
+                      </select><br>
+                      <label for="quantity">Quantity:</label>
+                      <input type="number" id="quantity" name="quantity" min="1"><br>
+                      <label for="shipping">Select Shipping Method:</label>
+                      <select id="shipping" name="shipping">
+                          <option value="overnight">Overnight</option>
+                          <option value="3-day express">3-Day Express</option>
+                          <option value="7-day">7-Day</option>
+                      </select><br>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Payment:</legend>
+                      <label for="cardname">Name on Card:</label>
+                      <input type="text" id="cardname" name="cardname"><br>
+                      <label for="cardnumber">Credit card number:</label>
+                      <input type="text" id="cardnumber" name="cardnumber"><br>
+                      <label for="expmonth">Expiry month:</label>
+                      <input type="text" id="expmonth" name="expmonth"><br>
+                      <label for="expyear">Expiry year:</label>
+                      <input type="text" id="expyear" name="expyear"><br>
+                      <label for="cvv">CVV:</label>
+                      <input type="text" id="cvv" name="cvv"><br>
+                  </fieldset>
+                  <input type="submit" value="Submit Order">
+              </form>
+            </center>
+        </section>
+    <hr>
+    </main>
+    <footer class="footer-content">
+        <center>
+            <a href="https://www.ghibli.jp/" target="_blank"><img src="Assets/imgbin_ghibli-museum-studio-ghibli-logo-film-png.png" alt="ghibli_logo" width="200"></a>
+            <h3><b>CONTACT US</b></h3>   
+            <a href="https://www.facebook.com/GhibliUSA" target="_blank"><img src="Assets/facebook.png" alt="facebook" width="30"></a>
+            <a href="https://www.instagram.com/ghibliusa/" target="_blank"><img src="Assets/instagram.png" alt="instagram" width="30"></a>
+            <p>© 2023 Ghibli Store. All rights reserved</p>
+        </center>
+    </footer>
+    
+</body>
+</html>
